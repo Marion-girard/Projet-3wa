@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url(police/Lato-Regular.woff2) format('woff2');
+}
+.header{
+    text-align: center;
+}
+.header nav{
+    background-color: #40CCEA;
+    justify-content: space-between;
+    text-decoration: none;
+}
+nav li{
+    display: inline;
+} 
+nav a{
+    text-decoration: none;
+    color:white;
+    margin: 0 5%;
+    text-align: center;
+}
+body{
+    color:#333;
+    line-height: 1.6em ;
+    margin:auto;
+    font-family:'lato';
+}
+.container{
+    max-width: 900px;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;   
+}
+main a{
+    color: #0096D0;
+    text-decoration: none;
+
+}
+h1, h2, h3{
+    line-height: 1.5em;
+    font-weight:normal;
+    text-align: left;
+}
+h1{
+    font-size: 3rem;
+    color: #40CCEA;
+    word-spacing:10px ;
+    border-bottom: 1px dotted ;
+    width: 90%;
+    text-align: center;   
+    margin: auto;
+}
+h2{
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+section{
+    margin:30px 0
+}
+ /*section dernier voyage */
+
+ #imgvienne{
+    float: left;
+    max-width: 47%;
+    margin-right: 1em;
+}
+.vienne{
+    text-align: left;
+    border-bottom: 1px solid #333;
+    padding-bottom:40px;
+        
+}
+.marrakech{
+    text-align: left;
+    border-bottom: 1px solid #333;
+    padding-bottom:40px;
+}
+#imgmarrakech{
+    float: right;
+    max-width: 49%;
+    margin-left: 1em;
+
+}
+.red{
+    color: red;
+}
+.ocre{
+    color:  #dfaf2c
+}
+.readmore{
+    background-color: #0096D0;
+    border-radius: 6px;
+    padding: 1em;
+    color:white
+}
+article{
+    margin-bottom: 25px;
+}
+#quandpartir{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+table{
+    border-left:  1px solid #333;
+    border-top:  1px solid #333;
+    border-right:  1px solid #333;
+    width: 100%;  
+}
+.ville{
+    border-right :  1px solid #333;
+}
+.pays{
+    border-right :  1px solid #333;
+}
+tr td  {
+    border-bottom :  1px solid #333;
+    padding: 1.5em;
+}
+table tbody tr:nth-child(odd){
+    background-color: #eee;
+}
+tbody{
+    text-align: left;
+}
+
+/*section propos*/
+.fond{
+    background-image: url(ressources/fond.jpg);
+    background-size: cover;
+    padding:2em;
+    background-repeat: no-repeat;
+}
+.propo{
+    background-color: white;
+    width: 50%;
+    padding: 2%;
+    text-align: left;
+}
+/*section  me contacter*/
+.contact{
+    text-align: left;
+    line-height: 1em ;
+}
+ .contact a{
+    text-decoration: none;
+    font-style: italic;
+}
+#address{
+    color: #333;
+}
+.map {
+    background-image: url(ressources/map.jpg);
+    background-size: cover;
+    height: 250px;;    
+}
+.formulaire{
+    display: grid;
+    padding: 1em;
+}
+.field {
+	display: flex;
+	padding: 0.5em 0;
+
+}
+.field input {
+	width: 30em;
+    height:2em ;
+    border-radius: 0.5em;
+}
+textarea{
+    height: 8em;
+    width: 22em;
+    padding-left: 1em;
+    border-radius: 0.5em;
+    resize: none; 
+}
+.item1 {
+    grid-column: 1/2;
+}
+.item2 {
+   grid-column:2/4;
+   grid-row: 1/4;
+}
+.item3 {
+    grid-column: 1/2;
+    grid-row: 2;
+}  
+.item5 {
+    grid-column: 1/2;
+    grid-row: 3;
+}  
+.item9{
+    grid-column :1/4;
+    grid-row:4;
+}
+.toolbar{
+    margin-top: 1em;
+}
+.button {
+    background-color: #0096D0;
+    border-radius: 1em;
+    width: 10em;
+    padding: 1em;
+    color: white
+}
+.suivez{
+    text-align: left;
+}
+.suivez .fa-pinterest
+{
+    color:#bd081c ;
+}
+.suivez .fa-instagram{
+    color:#8948C1 ;
+}
+.footer {	
+	text-align: center;
+	color: #fff;
+	background-color: #40CCEA;
+    line-height: 1em ;    
+}
+#wa{
+    width: 60px;
+}
+.footer a{
+    color: white;
+}

@@ -1,0 +1,158 @@
+
+.header{
+    text-align: center;
+}
+.header nav{
+    background-color: #40CCEA;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+nav li{display: inline;
+} 
+nav a{
+    text-decoration: none;
+    color:white;
+    margin: 0 5%;
+    text-align: center;
+}
+
+
+
+body{
+    color:#333;
+    line-height:1.6em ;
+    margin:auto
+}
+.container{
+    width: 90%;
+    max-width: 900px;
+    
+}
+
+h1, h2, h3{
+    line-height: normal;
+    font-weight: normal;
+
+}
+
+h1{
+    font-size: 3rem;
+    color: #40CCEA;
+    word-spacing:10px ;
+    border-bottom: 1px dotted ;
+    border-width: 90%;
+    text-align: center;
+}
+h2{
+    font-size: 1.6rem;
+    text-align: left;
+}
+h3{
+    font-size: 1.4rem;
+}
+ /*section dernier voyage */
+section.derniervoyage{ 
+    margin: 30px 0
+    
+}
+ #imgvienne{
+    float: left;
+    max-width: 49%;
+}
+.vienne{
+    text-align: left;
+    border-bottom: 1px solid #333;
+    margin-bottom: 25px;
+    padding-bottom:40px;
+      
+}
+article.vienne.text{
+    margin-left: 1px;
+}
+.marrakech{
+    text-align: left;
+    border-bottom: 1px solid #333;
+    margin-bottom: 25px;
+    padding-bottom:40px;
+
+}
+#imgmarrakech{
+    float: right;
+    max-width: 49%
+
+}
+.readmore{
+    background-color: #0096D0;
+    border-radius: 6px;
+    padding: 1em;
+    color:white
+}
+#quandpartir{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+table{
+    border-top: 1px solid #333 ;
+    margin: auto;
+    width: 100%;
+    
+}
+table tbody tr:nth-child(odd){
+    background-color: #eee;
+}
+table tbody tr.ville, table tbody tr.pays{
+    border-left: 1px solid #333;
+}
+
+/*section propos*/
+#propos{
+    width: 100%;
+}
+.fond{
+    background-image: url(ressources/fond.jpg);
+    background-size: cover;
+    width: 100%;
+    padding:2em;
+
+    background-repeat: no-repeat;
+}
+
+.propo{
+    background-color: white;
+    width: 50%;
+    padding: 2%
+   
+}
+/*section  me contacter*/
+
+.contact ul{
+    list-style-
+}
+ .contact a{
+    
+    text-decoration: none;
+    font-style: italic;
+}
+.contact a address{
+    color: #333;
+}
+
+.map {
+    background-image: url(ressources/map-image.png);
+}
+.querry {
+    float:right;
+    
+}
+.button {
+    background-color: #0096D0;
+    
+    padding: 1em;
+    
+}
+.toolbar{
+    text-align: center;
+}
