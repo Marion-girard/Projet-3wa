@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&family=Athiti&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@600&family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="ressources/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="ressources/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+    <link rel="stylesheet" href="styleContact.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="ressources/images/logo.png" alt="logo">
+        <h1><i class="fa fa-star fa-2xs" aria-hidden="true" style="color: #d72121;"  ></i> Freshly Restaurant <i class="fa fa-star" aria-hidden="true" style="color: #d72121;" ></i></h1>
+        <nav>
+            <ul>
+              <li class="home" ><a href="home.html" class="home" id="home">Home</a></li>
+              <li class="about"> <a href="about.html" id="about">About</a></li>
+              <li class="menu"> <a href="menu.html" id="menu">Menu</a></li>
+              <li><a href="contact.html" id="contact" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+        <main>
+            <section>
+                <h2> <i class="fa fa-star" aria-hidden="true" style="color: #d72121;" ></i>Contact us<i class="fa fa-star" aria-hidden="true" style="color: #d72121;" ></i></h2>
+                <p> If your want to make a reservation, please complete this form</p>
+                <p> Fields with are required</p>
+                <div class="formulaire">
+                    <form action="#" method="">
+                     <article class="reservation">
+					<h3>Reservation</h3> 
+                    <div>
+                        <label for="date">Date</label></br>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div>
+                        <label for="Time">Time</label></br>
+                        <input type="Time" id="time" name="time" required>
+                    </div>
+                    <div>
+                         <label for="Number">Number of guests</label></br>
+                        <input type="number" id="number" name="number">
+                    </div>
+                </article>
+                    <article class="detail">
+                        <h3>Details</h3>
+                        <div>
+                            <label for="name">Name</label></br>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div>
+                            <label for="Email">Email</label></br>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div>
+                             <label for="Telephone">Téléphone</label></br>
+                            <input type="tel" id="tel" name="tel">
+                        </div>
+                    </article>
+                    <article class="request">
+
+                        <h3>Further request</h3>
+                        <textarea name="area" rows="10" cols="110" ></textarea>
+
+                    </article>
+                    <div class="button-container">
+                        <input type="submit" value="Reserve">
+                     </div>
+                </form>
+                
+				</div>
+                
+            </section>
+            <section class="location">
+                <h2><i class="fa fa-star" aria-hidden="true" style="color: #d72121;" ></i> Our location<i class="fa fa-star" aria-hidden="true" style="color: #d72121;" ></i></h2>
+            <div id="map">
+                <!-- Ici s'affichera la carte -->
+    
+            </div>
+            <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+            <script type="text/javascript" src="map.js" ></script>
+        </section >
+        </main>
+        <footer class="footer">
+            
+            <article class="open">
+                <section class="titreOpen"><h4>Opening hours</h4></section>
+                <p>Monday:Closed</p>
+                <p> Tue-Wed: 9am - 10pm</p>
+                <p>Thu-fri: 9am - 10pm</p>
+                <p>sat-sun: 5pm - 10pm</p>
+            </article>
+            <article class="contact">
+            <h4>Contact</h4>
+            <p>  13 Christopher Street <br>
+                New York,<br>
+                NY 10014-3543 </p>
+                <a href="tel:*+0120008009999"> +0120008009999</a>
+             
+            </article>
+            <article class="pic">
+            <h4>social Network</h4>
+                <div class="pictos">
+                    <a href="#" class="facebook"><i class="fab fa-brand fa-facebook-f" style="color: #ffffff;"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-brandx fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href="#" class="pinterest"><i class="fab fa-brandx fa-pinterest" style="color: #ffffff;" ></i></a>
+                </div>
+            </article>
+    </footer>
+</body>
+</html>

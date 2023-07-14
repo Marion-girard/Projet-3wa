@@ -1,0 +1,432 @@
+body{
+    font-family: 'Athiti';
+    font-size: 18px;
+    margin:auto;
+    text-align: center;
+    padding: 0;
+}
+
+.container1{
+    margin:0 20em;
+}
+
+.fa {
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+ }
+main article{
+    background-color: #ebe3db;
+}
+h1, h2, h3, h4{
+    font-family: 'Merienda';
+}
+
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
+}
+
+h4{
+    font-size: 18px;
+}
+.footer p, .seemore{
+    font-size: 16px;
+}
+
+/*************************************************/
+/*Header*/
+
+header {
+	text-align: center;
+    margin: 4em 20%;
+}
+
+
+
+.header {
+	padding:  0;
+}
+nav{
+    position:relative;
+    bottom:30px;
+}
+nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 0.7em;
+    
+}
+nav a 
+{
+	color: black;
+	text-decoration: none;  
+	border-left: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	/*transition: all 0.7s;*/
+	margin-bottom: 1rem;
+    background-color:#ebe3db ;
+    padding: 0.3em 2em ;
+}
+
+#contact, #about, #menu {
+        margin-left: 2em;
+
+}
+.menu1 {
+    background-color:#4c4343 ;
+    color: white;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    float: left;
+}
+h1{
+    text-align: left;
+   
+}
+
+h1 {
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+nav{ 
+    text-align: right}
+
+
+/* Controls
+---------------------------------------------------------------------- */
+
+.controls {
+    padding: 1rem;
+   
+    font-size: 0.1px;
+}
+
+
+
+.control:hover {
+    background: #3f3f3f;
+}
+button {
+    padding: 1%;
+    margin: 2%;
+    border-style: outset;
+    background-color: #ebe3db;
+    border-width: 0;
+    
+    
+}
+
+/* Container
+---------------------------------------------------------------------- */
+
+.container {
+   /* padding: 1rem;*/
+    text-align: justify;
+    font-size: 0.1px;
+}
+
+.container:after {
+    content: '';
+    display: inline-block;
+   
+}
+
+/* Target Elements
+---------------------------------------------------------------------- */
+
+.mix,
+.gap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mix {
+    
+    
+    border-radius: 2px;
+    
+    position: relative;
+}
+img{
+    max-width: 100%;
+ width: 100%;   
+    
+}
+
+.mix{
+    margin-bottom: 3%;
+    margin-top:3% ;
+}
+.mix:before {
+    content: '';
+    display: inline-block;
+    
+}
+
+
+
+figure{
+    margin:0
+}
+
+article{
+    padding: 1%;
+}
+
+.dessert2, .cocktail2 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.dessert, .cocktail {
+    display: flex;
+    flex-direction: row;
+}
+.dessert .flex, .cocktail .flex{
+    display: flex;
+    flex-direction: row;
+}
+figcaption {
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 8px;
+    
+    
+	/* centrage du content */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    
+
+
+	/* transparent */
+	opacity: 0;
+}
+
+ figcaption{
+    color: white;
+}
+.nom div{
+    border: 2px solid white;
+    padding: 10px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+   
+}
+figcaption {
+    background-color:rgba(0,0,0,0.6)
+}
+
+.mix:hover figcaption{
+    opacity: 1;
+}
+.photo:hover figcaption{
+    opacity: 1;
+}
+
+.photo{
+    position: relative;
+}
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+
+
+/*3 Columns */
+
+
+    .mix,
+    .gap {
+        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+    }
+
+
+/* 4 Columns */
+
+
+   
+
+/* 5 Columns */
+
+
+   
+
+/********Footer****************************/
+.footer{
+    background-image: url(ressources/images/footer-bg.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.footer article
+{
+    width: 300px;
+}
+
+.contact{
+    margin: 0 5em;
+}
+
+h4{
+    border-bottom: 1px dashed white;
+    width: 90%;
+}
+a.tel {
+    text-decoration: none;
+    color:white
+}
+
+/*********************Tablette************/
+@media screen and (min-width:780px) and (max-width:980px){
+
+    /********header******/
+body{
+    margin: 0;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    max-width: 980px;
+    margin: auto;
+	text-align: center;
+}
+
+.header {
+	padding: 2rem 0;
+}
+
+
+h1{
+    margin: 2em auto;
+   
+}
+.logo {
+	
+	margin: auto;
+    
+    width: 25%;
+}
+
+nav {
+    display: flex;
+    background-color: #ebe3db;
+    justify-content: space-around;
+    
+    
+}
+li {
+    margin: 0 2em;
+
+}
+.container1{
+      
+    margin: 1em;
+    padding: 0;
+   
+}
+    
+}
+
+/*******************mobil*******************/
+@media screen and (max-width:780px){
+    body
+    {
+        margin: 0;
+        
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        max-width: 980px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .header {
+        padding: 2rem 0;
+    }
+    h1{
+        margin: 1em auto;
+        
+    }
+    .logo {
+        margin: auto;
+     
+        width: 25%;
+    }
+
+    nav li
+    {     
+        text-decoration: none;
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+        border-bottom: 1px solid #4c4343;
+        transition: all 0.7s;
+        background-color: #ebe3db;   
+    }
+
+    
+
+    .container1{
+      
+        margin: 1em;
+        padding: 0;
+       
+    }
+
+    .mix,
+.gap {
+    width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+}
+
+.vegan1 {
+    position: relative;
+    left: 25%;
+}
+
+.cocktail, .dessert{
+    display: block;
+}
+.cocktail .flex, .dessert .flex {
+    display: flex;
+    flex-direction: row;
+}
+.cocktail3 img, .dessert3 img {
+    width: 50%;
+}
+   /************************footer********************/
+
+   .footer{
+    display: flex;
+    flex-direction: column;
+  
+   }
+    .footer article{
+        margin: auto;
+    }
+    .titreOpen{
+        width: 100%;
+        padding: 2em;
+    }
+
+}

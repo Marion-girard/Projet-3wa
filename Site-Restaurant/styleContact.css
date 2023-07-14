@@ -1,0 +1,355 @@
+body{
+    font-family: 'Athiti';
+    font-size: 18px;
+    margin:auto;
+    text-align: center;
+    padding: 0;
+}
+.container {
+    margin:0 15em;
+
+}
+
+h1, h2, h3, h4{
+    font-family: 'Merienda';
+}
+    
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
+}
+.specialMenu h3{
+   font-size: 20px;
+}
+.specialMenu>p{
+    font-size: 15px;
+}
+h4{
+    font-size: 18px;
+}
+.footer p, .seemore{
+    font-size: 16px;
+}
+main article p::before {
+    content: "\f005";
+}
+
+
+/*************************************************/
+/*Header*/
+
+header {
+	text-align: center;
+    margin: 4em 20em;
+}
+
+
+
+.header {
+	padding:  0;
+}
+nav{
+    position:relative;
+    bottom:30px;
+}
+nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 0.7em;
+    
+}
+nav a 
+{
+	color: black;
+	text-decoration: none;  
+	border-left: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	/*transition: all 0.7s;*/
+	margin-bottom: 1rem;
+    background-color:#ebe3db ;
+    padding: 0.3em 2em ;
+}
+
+#contact, #about, #menu
+{
+  margin-left: 2em;
+}
+.contact {
+    background-color:#4c4343 ;
+    color: white;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    float: left;
+}
+h1{
+    text-align: left;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+nav{ 
+    text-align: right}
+
+.fa {
+        font-size: 10px;
+        position: relative;
+        bottom: 5px;
+    }
+/******************main***********/
+main{ 
+    margin: 5em 20em;
+}
+.formulaire{
+    background-color: #ebe3db;
+    margin: 0 30%   
+}
+
+.request{
+    width: 100%;
+}
+form{
+
+    display: grid;
+}
+
+.formulaire {
+   
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    width: 70%;
+    margin: auto;
+  }
+  
+  .request {
+    grid-column-start: 1;
+    grid-column-end: 3;
+   
+     grid-row-start: 3;
+    grid-row-end: 5
+  }
+  
+  .reservation {
+    grid-column-start: 1;
+     grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .detail{
+      grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .button-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+   
+     grid-row-start: 5;
+    grid-row-end: 7;
+  }
+  input[type=submit]{
+    background-color: #4c4343;
+  }
+  #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+    height:500px;
+    width: auto;
+  }
+  .location div{
+    width: auto;
+    height: 500px;
+  }
+  input{
+    width: 70%;
+    max-width: 100%;
+    padding: 1em 2em;
+    border-radius: 10px;
+  }
+  
+  label{
+    
+    
+    display: inline-block;
+    float: left;
+    padding: 0 3em;
+  }
+
+  .formulaire h3, .requesth3 {
+    text-align: left;
+    padding-left: 2em;
+  }
+
+
+/*********************footer*************/
+
+.footer{
+    background-image: url(ressources/images/footer-bg.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer article
+{
+    width: 300px;
+}
+
+.contact{
+    margin: 0 5em;
+}
+
+h4{
+    border-bottom: 1px dashed white;
+    width: 90%;
+}
+
+a.tel {
+    text-decoration: none;
+    color:white
+}
+
+    /*********************Tablette************/
+
+@media screen and (min-width:780px) and (max-width:980px){
+
+    /********header******/
+body{
+    margin: 0;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    max-width: 980px;
+    margin: auto;
+	text-align: center;
+}
+
+.header {
+	padding: 2rem 0;
+}
+h1{
+    margin: 1em auto;
+   /* padding: auto;*/
+}
+.logo {
+	
+	margin: auto;
+    /*padding: auto;*/
+    width: 25%;
+}
+
+nav {
+    display: flex;
+    background-color: #ebe3db;
+    justify-content: space-around;
+    
+    
+}
+li {
+    margin: 0 2em;
+
+}
+.container{
+      
+    margin: 1em;
+    padding: 0;
+   
+}
+    
+main{
+    margin: 0;
+}
+}
+
+.formulaire{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+/*******************mobil*******************/
+@media screen and (max-width:780px){
+    body
+    {
+        margin: 0;
+      /*  max-width: auto;*/
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        max-width: 980px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .header {
+        padding: 2rem 0;
+    }
+    h1{
+        margin: 1em auto;
+     /*   padding: auto;*/
+    }
+    .logo 
+    {
+        margin: auto;
+      /*  padding: auto;*/
+        width: 25%;
+    }
+
+    nav li
+    {     
+        text-decoration: none;
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+        border-bottom: 1px solid #4c4343;
+        transition: all 0.7s;
+        background-color: #ebe3db;   
+    }
+
+    .freshly {
+       display: block;
+       margin:0 
+    }
+
+    .container
+    {  
+        margin: 1em;
+        padding: 0;  
+    }
+    main
+    {
+        margin: 0;
+    }
+    
+    
+    .formulaire{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+   
+   /************************footer********************/
+
+   .footer{
+    display: flex;
+    flex-direction: column;
+  
+   }
+    .footer article{
+        margin: auto;
+    }
+    .titreOpen{
+        width: 100%;
+        padding: 2em;
+    }
+
+}
