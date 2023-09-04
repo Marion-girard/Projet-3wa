@@ -6,10 +6,11 @@ body{
     padding: 0;
 }
 .container {
-    margin:0 20em;
+    margin: auto;
+    max-width: 1100px;
 }
 
-.fa {
+.fa-star {
    font-size: 10px;
    position: relative;
    bottom: 5px;
@@ -54,11 +55,13 @@ header {
 
 
 .header {
-	padding:  0;
+	margin: auto;
+    max-width: 1100px;
 }
 nav{
     position:relative;
     bottom:30px;
+    
 }
 nav ul {
 	list-style: none;
@@ -164,6 +167,7 @@ nav{
     float: right;
     width: 400px;
     height: auto;
+    max-width: 100%;
 }
 main article{
     background-color: #ebe3db;
@@ -177,18 +181,7 @@ main article{
     width: auto;
     position: relative;
 }
-/*.prix{
-    background-color: black;
-    visibility: hidden;
-    text-align: center;
-    color: white;
-    height: 7em;
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-    border: 1px bold white;
-}*/
+
 .prix {
 	position: absolute;
 	top:0;
@@ -207,6 +200,19 @@ main article{
 	/* transparent */
 	opacity: 0;
 }
+
+figcaption p {
+    position: relative;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 .photo figcaption{
     color: white;
 }
@@ -218,7 +224,7 @@ figcaption.prix div{
     display: flex;
 	justify-content: center;
 	align-items: center;
-   
+   flex-direction: column;
 }
 figcaption {
     background-color:rgba(0,0,0,0.6)
@@ -227,7 +233,9 @@ figcaption {
 .photo:hover figcaption{
     opacity: 1;
 }
-
+strong{
+    font-size: 150%;
+}
 
 /*********************special menu***************/
 .menu{
@@ -244,7 +252,7 @@ figcaption {
     justify-content: center;
     margin-bottom: 3em;
 }
-.specialMenu p
+.specialMenu  p.description
 {
     border-bottom: 1px dashed #4c4343;
     text-align: left;
@@ -324,8 +332,8 @@ nav {
     display: flex;
     background-color: #ebe3db;
     justify-content: space-around;
-    
-    
+    position: relative;
+    bottom: 1px;
 }
 li {
     margin: 0 2em;
@@ -337,7 +345,18 @@ li {
     padding: 0;
    
 }
-    
+.freshly{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+.location{
+    width: 100%;
+}
+
+.menu{
+    margin-top: 0;
+}
 .specialMenu{
     display: flex;
     flex-direction: column;
@@ -369,7 +388,9 @@ margin-top: 1em;
         margin: auto;
         text-align: center;
     }
-    
+    #contact, #about, #menu {
+        margin-left: 0;
+    }
     .header {
         padding: 2rem 0;
     }
@@ -426,6 +447,10 @@ margin-top: 1em;
    .vegeMenu{
     margin-top: 1em;
    }
+
+   .menu{
+    margin-top: 0;
+}
    /************************footer********************/
 
    .footer{

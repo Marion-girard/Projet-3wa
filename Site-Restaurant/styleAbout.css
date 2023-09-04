@@ -8,10 +8,20 @@ body{
     padding: 0;
 }
 .container {
-    margin:0 15em;
-
+    margin: auto;
+    max-width: 1100px;
 }
 
+.fa {
+   font-size: 10px;
+   position: relative;
+   bottom: 5px;
+}
+h1{
+    position: relative;
+    top: 20px;
+    left:10px
+}
 h1, h2, h3, h4{
     font-family: 'Merienda';
 }
@@ -22,12 +32,6 @@ h1{
 h2{
     font-size: 25px;
 }
-.specialMenu h3{
-   font-size: 20px;
-}
-.specialMenu>p{
-    font-size: 15px;
-}
 h4{
     font-size: 18px;
 }
@@ -35,11 +39,7 @@ h4{
     font-size: 16px;
 }
 
-.fa {
-    font-size: 10px;
-    position: relative;
-    bottom: 5px;
- }
+
 
 /*************************************************/
 /*Header*/
@@ -49,14 +49,14 @@ header {
     margin: 4em 20em;
 }
 
-
-
 .header {
-	padding:  0;
+	margin: auto;
+    max-width: 1100px;
 }
 nav{
     position:relative;
     bottom:30px;
+    
 }
 nav ul {
 	list-style: none;
@@ -84,7 +84,11 @@ nav a
 {
   margin-left: 2em;
 }
-.home {
+
+li.contact {
+    margin: 0;
+}
+#about {
     background-color:#4c4343 ;
     color: white;
 }
@@ -98,8 +102,8 @@ h1{
    
 }
 nav{ 
-    text-align: right}
-
+    text-align: right
+}
 /* ********************/ 
 
 p{
@@ -113,7 +117,7 @@ video{
 }
 
 .diner{
-    background-color: rgb(243, 243, 243) ;
+    background-color: #ebe3db ;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -126,6 +130,11 @@ img{
     max-width: 100% ;
     width: 100%;
     height: auto;
+}
+
+.diner p{
+    text-align: center;
+    margin: 0 0 1em 0;
 }
 
 .un{
@@ -160,7 +169,9 @@ img{
     flex-direction: row;
     justify-content: center;
 }
-
+.footer p, .footer a{
+    text-align: center;
+} 
 .footer article
 {
     width: 300px;
@@ -173,6 +184,7 @@ img{
 h4{
     border-bottom: 1px dashed white;
     width: 90%;
+    margin-left:0 ;
 }
 a.tel {
     text-decoration: none;
@@ -210,7 +222,8 @@ nav {
     display: flex;
     background-color: #ebe3db;
     justify-content: space-around;
-    
+    position: relative;
+    bottom: 1px;
     
 }
 li {
@@ -224,7 +237,11 @@ li {
    
 }
 }
-
+.freshly{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
 @media screen and (max-width:780px){
     body
     {
@@ -240,6 +257,9 @@ li {
     
     .header {
         padding: 2rem 0;
+    }
+    #contact, #about, #menu {
+        margin-left: 0;
     }
     h1{
         margin: 1em auto;

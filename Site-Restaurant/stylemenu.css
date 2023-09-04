@@ -5,18 +5,20 @@ body{
     text-align: center;
     padding: 0;
 }
-
-.container1{
-    margin:0 20em;
+.container {
+    margin: auto;
+    max-width: 1100px;
 }
 
 .fa {
-    font-size: 10px;
+   font-size: 10px;
+   position: relative;
+   bottom: 5px;
+}
+h1{
     position: relative;
-    bottom: 5px;
- }
-main article{
-    background-color: #ebe3db;
+    top: 20px;
+    left:10px
 }
 h1, h2, h3, h4{
     font-family: 'Merienda';
@@ -28,7 +30,6 @@ h1{
 h2{
     font-size: 25px;
 }
-
 h4{
     font-size: 18px;
 }
@@ -41,17 +42,17 @@ h4{
 
 header {
 	text-align: center;
-    margin: 4em 20%;
+    margin: 4em 20em;
 }
 
-
-
 .header {
-	padding:  0;
+	margin: auto;
+    max-width: 1100px;
 }
 nav{
     position:relative;
     bottom:30px;
+    
 }
 nav ul {
 	list-style: none;
@@ -75,11 +76,15 @@ nav a
     padding: 0.3em 2em ;
 }
 
-#contact, #about, #menu {
-        margin-left: 2em;
-
+#contact, #about, #menu
+{
+  margin-left: 2em;
 }
-.menu1 {
+
+li.contact {
+    margin: 0;
+}
+#about {
     background-color:#4c4343 ;
     color: white;
 }
@@ -92,14 +97,9 @@ h1{
     text-align: left;
    
 }
-
-h1 {
-    position: relative;
-    top: 20px;
-    left: 10px;
-}
 nav{ 
-    text-align: right}
+    text-align: right
+}
 
 
 /* Controls
